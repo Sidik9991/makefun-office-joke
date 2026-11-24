@@ -18,7 +18,14 @@ type Cand = { id: string; text: string; joke: number; funny: number; oneLine: nu
 
 const CANDIDATES: Cand[] = [
   { id: "A", text: "I put 'per my last email' in my will, so my family knows I tried.", joke: 2, funny: 2, oneLine: 2, fresh: 2, clear: 2,
-    note: "Most specific office detail of the set ('per my last email'); the will is a surprise payoff at the very end; one sentence, 68 chars." },
+    note: "Most specific office detail of the set ('per my last email'); the will is a surprise payoff at the very end; one sentence, 65 chars." },
+  // --- Second pass (2026-11-24): 3 challengers re-judged against the same brief. ---
+  { id: "H", text: "HR said to bring my whole self to work, so I brought my resignation too.", joke: 2, funny: 2, oneLine: 2, fresh: 2, clear: 2,
+    note: "Ties A on points (22): real HR phrase + resignation turn. Loses the tie-break — 78 chars vs A's 65, so A stays tighter (criterion 5)." },
+  { id: "I", text: "My performance review says 'exceeds expectations' and my pay says otherwise.", joke: 2, funny: 1, oneLine: 2, fresh: 1, clear: 2,
+    note: "Recognisable contrast but no turn — it states the complaint instead of landing a punchline; loses on criterion 2." },
+  { id: "J", text: "The fire drill is the only meeting where everyone shows up on time.", joke: 2, funny: 2, oneLine: 2, fresh: 2, clear: 2,
+    note: "Ties A on points (22): fire drill reframed as a meeting is a fresh turn. Loses the tie-break — 70 chars vs A's 65." },
   { id: "B", text: "I set my Slack status to 'in a meeting' and finally got some work done.", joke: 2, funny: 2, oneLine: 2, fresh: 1, clear: 2,
     note: "Strong recognition (status-as-shield), but the 'busy status' trick is a known shape; loses freshness to A." },
   { id: "C", text: "My out-of-office reply has been on so long HR asked if I still work here.", joke: 2, funny: 1, oneLine: 2, fresh: 1, clear: 2,
